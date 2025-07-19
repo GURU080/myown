@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
 import java.time.Duration;
 import com.ninja.utils.EmailUtils;
 
-public class VerifyRegisteronlymandatoryfileds {
+public class Tc1 {
 
        @Test
     public void VerifyRegister() {
@@ -31,26 +31,22 @@ public class VerifyRegisteronlymandatoryfileds {
         driver.findElement(By.id("input-telephone")).sendKeys("879876696");
         driver.findElement(By.id("input-password")).sendKeys("REV@123");
         driver.findElement(By.id("input-confirm")).sendKeys("REV@123");
+        
+      
 
         driver.findElement(By.name("agree")).click();
         driver.findElement(By.xpath("//input[@value='Continue']")).click();
         
         
-        //vlaidate the page 
+        //validate the page 
         
-        String al="Your Account Has Been Created!";
-        String ep=driver.findElement(By.xpath("//h1[text()='Your Account Has Been Created!']")).getText();
-        
-//        if(al.equals(ep)) {
-//        	System.out.println("account created pass");
-//        }
-//        else {
-//        	System.out.println("failed");
-//        }
+        String al="Logout";
+        String ep=driver.findElement(By.xpath("//a[@class='list-group-item'][normalize-space()='Logout']")).getText();
+       
 //        
         
-        Assert.assertEquals(al, ep,"Account creation validation failed!");
+        Assert.assertEquals(al, ep,"logout button is presnt!");
 
-        driver.quit();
+       driver.quit();
     }
 }
