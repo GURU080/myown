@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ninja.register.Tcr_004">
+      <class name="com.ninja.register.TC_005">
         <methods>
-          <include name="verifyregisterwithoutdetails"/>
+          <include name="verifyregisterwithnewsletter"/>
         </methods>
-      </class> <!-- com.ninja.register.Tcr_004 -->
+      </class> <!-- com.ninja.register.TC_005 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
