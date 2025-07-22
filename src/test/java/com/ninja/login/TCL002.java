@@ -10,11 +10,11 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Tcl001 {
-
-
+public class TCL002 {
+	
 	@Test
-	public void verfiywithvalidcrednetials() {
+
+	public void verifywithinvalidpassword() {
 		
 		
 		WebDriverManager.chromedriver().setup();
@@ -27,14 +27,16 @@ public class Tcl001 {
 	    driver.findElement(By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']")).click();
 	  
 	    driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys("guru1234g@gmail.com");
-	    driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys("12345678");
+	    driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys("1234567");
 	    
 	    driver.findElement(By.xpath("//input[@value='Login']")).click();
 	    
-	    Assert.assertEquals(driver.findElement(By.xpath("//a[@class='list-group-item'][normalize-space()='Logout']")).getText(),"Logout");
+	    String EP="Warning: No match for E-Mail Address and/or Password.";
+	    
+	    Assert.assertEquals(driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']")).getText(),EP);
 	    
 	      driver.close();
-	}
 
+	}
 
 }

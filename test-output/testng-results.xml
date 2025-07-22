@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-22T16:33:33 IST" name="Default suite" finished-at="2025-07-22T16:33:36 IST" duration-ms="2577">
+  <suite started-at="2025-07-22T16:51:11 IST" name="Default suite" finished-at="2025-07-22T16:51:21 IST" duration-ms="10187">
     <groups>
     </groups>
-    <test started-at="2025-07-22T16:33:33 IST" name="Default test" finished-at="2025-07-22T16:33:36 IST" duration-ms="2577">
-      <class name="com.ninja.login.Tcl001">
-        <test-method signature="verfiywithvalidcrednetials()[pri:0, instance:com.ninja.login.Tcl001@747ddf94]" started-at="2025-07-22T16:33:34 IST" name="verfiywithvalidcrednetials" finished-at="2025-07-22T16:33:36 IST" duration-ms="2545" status="PASS">
+    <test started-at="2025-07-22T16:51:11 IST" name="Default test" finished-at="2025-07-22T16:51:21 IST" duration-ms="10187">
+      <class name="com.ninja.login.Tcl005">
+        <test-method signature="verifywithONLYEMIALFIELD()[pri:0, instance:com.ninja.login.Tcl005@747ddf94]" started-at="2025-07-22T16:51:11 IST" name="verifywithONLYEMIALFIELD" finished-at="2025-07-22T16:51:21 IST" duration-ms="10158" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verfiywithvalidcrednetials -->
-      </class> <!-- com.ninja.login.Tcl001 -->
+        </test-method> <!-- verifywithONLYEMIALFIELD -->
+      </class> <!-- com.ninja.login.Tcl005 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

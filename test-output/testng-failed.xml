@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ninja.register.Tc1">
+      <class name="com.ninja.login.TCL002">
         <methods>
-          <include name="registerAccount"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="verifywithinvalidpassword"/>
         </methods>
-      </class> <!-- com.ninja.register.Tc1 -->
+      </class> <!-- com.ninja.login.TCL002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
