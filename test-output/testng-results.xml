@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-21T18:04:44 IST" name="Default suite" finished-at="2025-07-21T18:04:46 IST" duration-ms="2964">
+  <suite started-at="2025-07-22T16:33:33 IST" name="Default suite" finished-at="2025-07-22T16:33:36 IST" duration-ms="2577">
     <groups>
     </groups>
-    <test started-at="2025-07-21T18:04:44 IST" name="Default test" finished-at="2025-07-21T18:04:46 IST" duration-ms="2964">
-      <class name="com.ninja.register.Tc008">
-        <test-method signature="verifyexistingemail()[pri:0, instance:com.ninja.register.Tc008@747ddf94]" started-at="2025-07-21T18:04:44 IST" name="verifyexistingemail" finished-at="2025-07-21T18:04:46 IST" duration-ms="2933" status="PASS">
+    <test started-at="2025-07-22T16:33:33 IST" name="Default test" finished-at="2025-07-22T16:33:36 IST" duration-ms="2577">
+      <class name="com.ninja.login.Tcl001">
+        <test-method signature="verfiywithvalidcrednetials()[pri:0, instance:com.ninja.login.Tcl001@747ddf94]" started-at="2025-07-22T16:33:34 IST" name="verfiywithvalidcrednetials" finished-at="2025-07-22T16:33:36 IST" duration-ms="2545" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyexistingemail -->
-      </class> <!-- com.ninja.register.Tc008 -->
+        </test-method> <!-- verfiywithvalidcrednetials -->
+      </class> <!-- com.ninja.login.Tcl001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
