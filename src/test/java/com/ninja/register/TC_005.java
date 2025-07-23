@@ -8,11 +8,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.ninja.testbase.Baseclass;
 import com.ninja.utils.EmailUtils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TC_005 {
+public class TC_005 extends Baseclass {
 
 	
 
@@ -20,11 +21,7 @@ public class TC_005 {
 		public void verifyregisterwithnewsletter() {
 			
 			
-			WebDriverManager.chromedriver().setup();
-		    WebDriver driver = new ChromeDriver();
-		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-		    driver.manage().window().maximize();
-		    driver.get("https://tutorialsninja.com/demo/");
+			
 
 		    driver.findElement(By.xpath("//span[text()='My Account']")).click();
 		    driver.findElement(By.xpath("//a[text()='Register']")).click();
@@ -55,13 +52,7 @@ public class TC_005 {
 		  
 		  
 		
-		    
-//		    String ep="Success: Your newsletter subscription has been successfully updated!";
-//		    
-//		    
-//		    Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"account-account\"]/div[1]/text()")).getText(), ep);
-		    
-		    driver.quit();
+		    System.out.println("Registration Test Passed - verifyregisterwithnewsletter");
 		    
 		}
 

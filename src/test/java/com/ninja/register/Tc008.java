@@ -8,19 +8,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
+import com.ninja.testbase.Baseclass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Tc008 {
+public class Tc008 extends Baseclass {
   
 	@Test
 	public void verifyexistingemail() {
-		WebDriverManager.chromedriver().setup();
-	    WebDriver driver = new ChromeDriver();
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-	    driver.manage().window().maximize();
-	    driver.get("https://tutorialsninja.com/demo/");
+	
 
 	    driver.findElement(By.xpath("//span[text()='My Account']")).click();
 	    driver.findElement(By.xpath("//a[text()='Register']")).click();
@@ -42,7 +38,7 @@ public class Tc008 {
     
     Assert.assertEquals( xp, ep);
     
-    driver.close();
+  System.out.println("test pass verifyexistingemail");
     
 
 

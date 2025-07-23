@@ -8,20 +8,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.ninja.testbase.Baseclass;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Tcl005 {
+public class Tcl005  extends Baseclass  {
 	
 	@Test
 
 	public void verifywithONLYEMIALFIELD() {
 		
-		
-		WebDriverManager.chromedriver().setup();
-	    WebDriver driver = new ChromeDriver();
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-	    driver.manage().window().maximize();
-	    driver.get("https://tutorialsninja.com/demo/");
+	
 
 	    driver.findElement(By.xpath("//span[text()='My Account']")).click();
 	    driver.findElement(By.xpath("//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']")).click();
@@ -35,7 +32,6 @@ public class Tcl005 {
 	    
 	    Assert.assertEquals(driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']")).getText(),EP);
 	    
-     driver.close();
-
+	    System.out.println("test pass - verifywithONLYEMIALFIELD ");
 }
 }
